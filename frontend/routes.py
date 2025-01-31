@@ -1,5 +1,5 @@
 from . import frontend_bp
-from flask import render_template, send_from_directory
+from flask import render_template, send_from_directory, request
 import os
 
 
@@ -11,6 +11,14 @@ def index():
 @frontend_bp.route('/download')
 def download():
     return send_from_directory(os.getcwd(), "felix_cv.pdf", as_attachment=True, mimetype='application/pdf')
+
+
+@frontend_bp.route('/contacts', methods=['GET', 'POST'])
+def contacts():
+    if request.method == 'POST':
+        pass
+    else:
+        return render_template('contacts.html')
 
 
 @frontend_bp.route('/case-studies', methods=['GET'])
