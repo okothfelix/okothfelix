@@ -1,0 +1,195 @@
+{% extends "base-index.html" %}
+
+{%block title %}Case Studies{% endblock %}
+
+{% block content %}
+
+<section class="hero-section ptb-100" style="background: url()no-repeat center center / cover">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-7">
+                <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+                    <h1 class="mb-0">Projects</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="module ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-8">
+                <div class="row row-post-thumbnail">
+                    <article class="post row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-preview"><a href="#"><img
+                                    src="{{url_for('static', filename='img/education_app_dev.jpg')}}" alt="article"
+                                    class="img-fluid"/></a></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title">Data Science Implementation for Education</h2>
+                                    <ul class="post-meta">
+                                        <li>Data Analysis</li>
+                                        <li>Data Science</li>
+                                        <li>Software Development</li>
+                                        <li>Big Data</li>
+                                    </ul>
+                                </div>
+                                <div class="post-content">
+                                    <p>We have implemented data science in our pilot application Maarifa Education a
+                                        communication application for higher learning institutions that enable the
+                                        management to monitor lecture attendance ...</p>
+                                    <a href="../case-studies/maarifa-education" class="detail-link">Read more <span
+                                            class="ti-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-preview"><img
+                                    src="{{url_for('static', filename='img/ecommerce.jpg')}}" height="200" alt="article"
+                                    class="img-fluid"/></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title">OneSpaceMall Ecommerce Technology</h2>
+                                    <ul class="post-meta">
+                                        <li>Machine Learning</li>
+                                        <li>Statistics</li>
+                                        <li>Data Analytics</li>
+                                        <li>Ecommerce</li>
+                                    </ul>
+                                </div>
+                                <div class="post-content">
+                                    <p>We have partnered with Awili technologies to build the OneSpaceMall
+                                        application that allows users to order goods online through the website and
+                                        mobile application. The platform provides stores an online space to sell
+                                        their products with a buy now pay later option ...</p>
+                                    <a href="../case-studies/onespacemall" class="detail-link">Read more <span
+                                            class="ti-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-preview"><img
+                                    src="{{url_for('static', filename='img/polling_application.jpg')}}" alt="article"
+                                    class="img-fluid"/></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title">Statistical analysis with the Maarifa Polling
+                                        Application</h2>
+                                    <ul class="post-meta">
+                                        <li>Data Science</li>
+                                        <li>Statistics</li>
+                                        <li>Data Analytics</li>
+                                        <li>Big Data</li>
+                                    </ul>
+                                </div>
+                                <div class="post-content">
+                                    <p>Maarifa Polling application is a crowd-sourcing application that enables the
+                                        administrators to gather views from open and closed audiences by providing
+                                        them with a surveys or questioners for which they are able to provide the
+                                        feedback. The responses are analysed for each given question adn the results
+                                        sent back to the administrators ... </p>
+                                    <a href="../case-studies/maarifa-polling" class="detail-link">Read more <span
+                                            class="ti-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="post row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-preview"><a href="#"><img
+                                    src="{{url_for('static', filename='img/service-delivery.jpg')}}" alt="article"
+                                    class="img-fluid"/></a></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title">Service Delivery Application</h2>
+                                    <ul class="post-meta">
+                                        <li>Programming</li>
+                                        <li>Software Development</li>
+                                        <li>Database Administration</li>
+                                    </ul>
+                                </div>
+                                <div class="post-content">
+                                    <p>We have developed the service delivery application that we have partnered
+                                        with Awili technologies and other service providers to offer professional
+                                        services targeting various field such as information technology, electronics
+                                        products
+                                        repair and maintenance, cleaning services and more. Clients can orders these
+                                        services through the application ...</p>
+                                    <!-- <a href="../case-studies/service-delivery" class="detail-link">Read more <span
+                                            class="ti-arrow-right"></span></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-preview"><img src="{{url_for('static', filename='img/faith.jpg')}}"
+                                                           alt="article" class="img-fluid"/></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title">Communication application for religious institutions</h2>
+                                    <ul class="post-meta">
+                                        <li>Software Development</li>
+                                        <li>Programming</li>
+                                        <li>Data Analytics</li>
+                                    </ul>
+                                </div>
+                                <div class="post-content">
+                                    <p>Through the Maarifa Faith program we have partnered with several religious
+                                        institutions to offer them a website to display information about their
+                                        organization and a communication platform in which they are able to send out
+                                        notifications to the worshipers via SMS and mobile application ... </p>
+                                    <!-- <a href="../case-studies/maarifa-faith" class="detail-link">Read more <span
+                                            class="ti-arrow-right"></span></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="call-to-action py-5">
+    <div class="container">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-7">
+                <div class="subscribe-content">
+                    <h3 class="mb-1">Want to collaborate?</h3>
+                    <p>Inspired? Let's discuss how I can build your custom software solution.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="action-btn text-lg-right text-sm-left">
+                    <a href="{{url_for('frontend.contacts')}}" class="btn secondary-solid-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock %}
+

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Felix Okoth Software Developer Portfolio. Okoth Felix Portfolio">
+    <meta name="author" content="Okoth Felix">
+    <meta property="og:site_name" content="Okoth Felix Portfolio"/> <!-- website name -->
+    <meta property="og:site" content="okothfelix.onrender.com"/> <!-- website link -->
+    <meta property="og:title" content="Okoth Felix Portfolio"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Your vision, My Code. Building the next generation of software, one line at a time. Experience you can trust."/> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="{{url_for('static', filename='img/felix.jpg')}}"/> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="okothfelix.onrender.com"/> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article"/>
+    <title>{% block title %}{% endblock %} - Okoth Felix</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.mb.YTPlayer.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+</head>
+<body>
+
+<div id="preloader">
+    <div class="loader1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{url_for('frontend.index')}}">
+                <img src="{{url_for('static', filename='img/logo.png')}}" width="120" height="50" alt="logo" class="img-fluid"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../#values">About</a></li>
+                    <li><a href="../#technologies">Tech Stack</a></li>
+                    <li><a href="{{url_for('frontend.case_studies')}}">Projects</a></li>
+                    <li><a href="{{url_for('frontend.contacts')}}">Let's Talk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main">
+{% block content %} {% endblock %}
+</div>
+
+<footer class="footer-section">
+    <div class="footer-bottom py-2">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-5 col-lg-5">
+                    <p class="copyright-text pb-0 mb-0">Copyrights © <script> document.write(new
+                              Date().getFullYear())</script></p>
+                </div>
+                <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
+                    <div class="social-nav text-right">
+                        <ul class="list-unstyled social-list mb-0">
+                            <li class="list-inline-item tooltip-hover">
+                                <a href="https://wa.me/254797634087" target="_blank" class="rounded"><span class="fab fa-whatsapp whatsapp-icon"></span></a>
+                                <div class="tooltip-item">Whatsapp</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" target="_blank" class="rounded"><span class="ti-linkedin"></span></a>
+                                <div class="tooltip-item">Linkedin</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="ti-angle-up"></span>
+</button>
+
+<script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.mb.YTPlayer.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/mixitup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.countdown.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+</body>
+</html>

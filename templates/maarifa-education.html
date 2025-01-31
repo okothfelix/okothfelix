@@ -1,0 +1,180 @@
+{% extends "base-index.html" %}
+
+{%block title %}Maarifa Education{% endblock %}
+
+{% block content %}
+<div class="main">
+    <section class="service-details-section ptb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="service-details-wrap">
+                        <img src="../static/assets/frontend/img/education_app_dev.jpg" alt="services"
+                             class="img-fluid rounded shadow-sm"/>
+                        <div class="services-detail-content mt-4">
+                            <h4>Services Details</h4>
+                            <p>Maarifa Education is a communication application for higher learning institutions that
+                                enable the management to monitor lecture attendance. Through the application the
+                                lecturer
+                                activates the attendance form which is online while in class by providing a class code
+                                that
+                                acts as a password for the lecturer. The application then captures the geolocation of
+                                the
+                                lecturer phone and sends out a notification in form of an SMS to the lecturer notifying
+                                him/her that the attendance form is online and the students can proceed to sign it from
+                                their end. The students through their accounts can now use the class code provided by
+                                the
+                                lecturer to sign the form.</p>
+
+                            <p>The application verifies the class code and the geolocation of
+                                the student’s phone number before successfully adding their details to the attendance
+                                form.
+                                The lecturers can also get the attendance reports of the unit they teach with average
+                                attendance of each student computed up to the current point in the semester. This
+                                attendance
+                                report is sent to the lecturer’s email address as an excel sheet. The administrators can
+                                also view the same report in the administrator’s website portal and get analysis for the
+                                average attendance of the university based on the different categories i.e., campus,
+                                level,
+                                program, department which can be downloaded.</p>
+
+                            <p>The application also includes student lecturer
+                                evaluation for the students which is linked with the attendance report to allow only
+                                students who have met the threshold attendance to evaluate the lecturer. The
+                                administrators
+                                can view the evaluation report for each unit and the responses analysis which they can
+                                use
+                                for decision making. The application was tested with the department of Microbiology and
+                                Parasitology School of Medicine, Kenyatta University.</p>
+
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <div class="img-wrap">
+                                        <img src="../static/assets/frontend/img/maarifaedu1.jpeg"  height="200"
+                                             alt="services" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled tech-feature-list">
+                                        <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Ussd
+                                            app</strong>
+                                            for users without smart phones.
+                                        </li>
+                                        <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Mobile
+                                            app</strong>
+                                            for both students and lecturers.
+                                        </li>
+                                        <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Web
+                                            Application</strong> For the administrators of the institutions.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="accordion-1" class="accordion accordion-faq mt-5">
+                                <div class="card">
+                                    <div class="card-header py-3" id="heading-1-2" data-toggle="collapse" role="button"
+                                         data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                                        <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How long does it take to
+                                            setup.</h6>
+                                    </div>
+                                    <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
+                                         data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <p>Set up period takes 2-3 days where we load the timetables and the
+                                                lecturers details. We also carry out a training session with the
+                                                lecturers and instruct them on how to use the application.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header py-3" id="heading-1-3" data-toggle="collapse" role="button"
+                                         data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                                        <h6 class="mb-0"><span class="ti-wallet mr-3"></span> How long does the pilot phase take.
+                                        </h6>
+                                    </div>
+                                    <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
+                                         data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <p>Usually we pilot the application for one semester for a given school
+                                                before setting up the application of the entire institution to ensure
+                                                all features needed are working as required by the administration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
+                                         role="button" data-target="#collapse-1-1" aria-expanded="false"
+                                         aria-controls="collapse-1-1">
+                                        <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How much does the
+                                            licenses cost?
+                                        </h6>
+                                    </div>
+                                    <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
+                                         data-parent="#accordion-1" style="">
+                                        <div class="card-body">
+                                            <p>The license for installing the application to your institution cost from
+                                                Kshs. 150,000 -2.5M depending on the number of campuses. We also charge
+                                                a maintenance fee annually where we do the maintenance of the system
+                                                three times a year.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="sidebar-right pl-4">
+                        <aside class="widget widget-categories">
+                            <div class="widget-title">
+                                <h5>All Services</h5>
+                            </div>
+                            <ul class="all-service-list">
+                                <li>Lecture attendance form automation</li>
+                                <li>Student Lecturer Evaluation</li>
+                                <li>Administrator Communication</li>
+                                <li>Timetable automation</li>
+                                <li>Lecture Rescheduling</li>
+                            </ul>
+                        </aside>
+
+                        <aside class="widget widget-categories">
+                            <div class="widget-title">
+                                <h5>Need Help?</h5>
+                            </div>
+                            <p>We are available in 24/7 hours for dedicated support</p>
+                            <ul class="primary-list mt-25">
+                                <li><span class="ti-location-pin mr-2 color-primary"></span> 1st Floor Chandaria
+                                    Business Innovation Incubation Centre, Nairobi Kenya.
+                                </li>
+                                <li><span class="ti-mobile mr-2 color-primary"></span> +254 797 634 087</li>
+                                <li><span class="ti-email mr-2 color-primary"></span> support@kothlyxlabs.com</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action py-5 gray-light-bg">
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-md-7">
+                    <div class="subscribe-content">
+                        <h3 class="mb-1">Consulting Agency for Your Business</h3>
+                        <p>Join the Maarifa Education Community for request for a pilot test for your institution.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="action-btn text-lg-right text-sm-left">
+                        <a href="../contacts" class="btn secondary-solid-btn">Become a Client</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
