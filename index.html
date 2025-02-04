@@ -70,7 +70,7 @@
 
 <div class="main">
     <section class="hero-equal-height pt-165 pb-100"
-             style="background: url(static/img/bg-shape.sv')}})no-repeat bottom center / cover">
+             style="background: url({{url_for('static', filename='img/bg-shape.sv')}})no-repeat bottom center / cover">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-12 col-lg-6">
@@ -83,14 +83,14 @@
                             needs
                             into elegant, robust code that drives growth and efficiency. Let's discuss your vision. </p>
                         <div class="action-btns mt-3">
-                            <a href="felix_cv.pdf" target="_blank" class="btn secondary-solid-btn">Download
+                            <a href="{{url_for('frontend.download')}}" class="btn secondary-solid-btn">Download
                                 Resume</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <div class="img-wrap">
-                        <img src="static/img/felix3.jpg')}}" width="200" height="200"
+                        <img src="{{url_for('static', filename='img/felix3.jpg')}}" width="200" height="200"
                              style="border-radius:50%" alt="hero single"
                              class="custom-width img-fluid">
                     </div>
@@ -104,7 +104,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="core-services-single rounded p-5 my-md-3 my-lg-3 my-sm-0 shadow-lg">
-                        <img src="static/img/promo-img-2.svg')}}" alt="promo" class="mb-3"
+                        <img src="{{url_for('static', filename='img/promo-img-2.svg')}}" alt="promo" class="mb-3"
                              width="100">
                         <h5>My Values</h5>
                         <p class="mb-0">I build trust with clients through transparency, communication, and a relentless
@@ -119,7 +119,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="core-services-single rounded p-5 my-md-3 my-lg-3 my-sm-0 shadow-lg">
-                        <img src="static/img/promo-img-3.svg')}}" alt="promo" class="mb-3"
+                        <img src="{{url_for('static', filename='img/promo-img-3.svg')}}" alt="promo" class="mb-3"
                              width="100">
                         <h5>My Mission</h5>
                         <p class="mb-0">To provide client-centric software development services, delivering innovative
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="core-services-single rounded p-5 my-md-3 my-lg-3 my-sm-0 shadow-lg">
-                        <img src="static/img/promo-img-1.svg')}}" alt="promo" class="mb-3"
+                        <img src="{{url_for('static', filename='img/promo-img-1.svg')}}" alt="promo" class="mb-3"
                              width="100">
                         <h5>My Vision</h5>
                         <p class="mb-0">To be the trusted partner in software innovation, empowering clients with
@@ -257,7 +257,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-feature-list p-4 text-center">
-                        <img src="static/img/consult.svg')}}" alt="consulting" width="80"
+                        <img src="{{url_for('static', filename='img/consult.svg')}}" alt="consulting" width="80"
                              class="mb-3">
                         <h5 class="mb-2">Big Data Consulting</h5>
                         <p>Power BI, AWS, Data engineering, Data Visualization</p>
@@ -265,7 +265,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-feature-list p-4 text-center">
-                        <img src="static/img/machine-learning.svg')}}" alt="consulting"
+                        <img src="{{url_for('static', filename='img/machine-learning.svg')}}" alt="consulting"
                              width="80"
                              class="mb-3">
                         <h5 class="mb-2">Machine Learning</h5>
@@ -274,7 +274,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-feature-list p-4 text-center">
-                        <img src="static/img/data-analytics.svg')}}" alt="consulting" width="80"
+                        <img src="{{url_for('static', filename='img/data-analytics.svg')}}" alt="consulting" width="80"
                              class="mb-3">
                         <h5 class="mb-2">Data Analytics</h5>
                         <p>SQL, Python(Pandas, NumPy), Diagnostic Analysis, Sales Forecasting</p>
@@ -282,7 +282,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-feature-list p-4 text-center">
-                        <img src="static/img/data-security.svg')}}" alt="consulting" width="80"
+                        <img src="{{url_for('static', filename='img/data-security.svg')}}" alt="consulting" width="80"
                              class="mb-3">
                         <h5 class="mb-2">Data Security</h5>
                         <p>RDBMS(MySQL, Oracle), NoSQL(Mongodb), access control, penetration testing, security
@@ -291,7 +291,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-feature-list p-4 text-center">
-                        <img src="static/img/artificial-intelligence.svg')}}" alt="consulting"
+                        <img src="{{url_for('static', filename='img/artificial-intelligence.svg')}}" alt="consulting"
                              width="80" class="mb-3">
                         <h5 class="mb-2">Artificial Intelligence</h5>
                         <p>AI algorithms, neural networks, cloud AI platforms</p>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-feature-list p-4 text-center">
-                        <img src="static/img/internet-things.svg')}}" alt="consulting" width="80"
+                        <img src="{{url_for('static', filename='img/internet-things.svg')}}" alt="consulting" width="80"
                              class="mb-3">
                         <h5 class="mb-2">Internet Of Things</h5>
                         <p>Embedded C/C++, python, sensor integration, microcontrollers, iot platforms</p>
@@ -310,7 +310,7 @@
     </section>
 
     <section class="gradient-overlay ptb-100"
-             style="background: url(static/img/project_description.jpeg')}})no-repeat center center / cover">
+             style="background: url({{url_for('static', filename='img/project_description.jpeg')}})no-repeat center center / cover">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-8">
