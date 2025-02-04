@@ -610,9 +610,7 @@ select.form-control.has-value{
 .bg-transparent ul li a{
     color: #ffffff;
 }
-.bg-transparent ul li a:hover, .white-bg.affix ul li a:hover {
-    opacity: 1;
-}
+
 
 .bg-transparent.affix {
     background: linear-gradient(75deg, #1351a8 5%, #162e66) !important;
