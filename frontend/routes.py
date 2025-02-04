@@ -38,7 +38,7 @@ def case_studies_maarifa_education():
 
 @frontend_bp.route('/case-studies/timetable-generator', methods=['GET'])
 def case_studies_timetable_generator():
-    return render_template('timetable-generator.html')
+    return render_template('case-studies-timetable-generator.html')
 
 
 @frontend_bp.route('/case-studies/one-space-mall', methods=['GET'])
