@@ -28,7 +28,7 @@ def contacts():
 
 @frontend_bp.route('/case-studies', methods=['GET'])
 def case_studies():
-    return render_template('case-studies.html')
+    return render_template('case_studies.html')
 
 
 @frontend_bp.route('/case-studies/maarifa-education', methods=['GET'])
