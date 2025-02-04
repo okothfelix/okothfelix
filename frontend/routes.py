@@ -33,7 +33,7 @@ def case_studies():
 
 @frontend_bp.route('/case-studies/maarifa-education', methods=['GET'])
 def case_studies_maarifa_education():
-    return render_template('maarifa-education.html')
+    return render_template('case-studies-maarifa-education.html')
 
 
 @frontend_bp.route('/case-studies/timetable-generator', methods=['GET'])
@@ -43,7 +43,7 @@ def case_studies_timetable_generator():
 
 @frontend_bp.route('/case-studies/one-space-mall', methods=['GET'])
 def case_studies_one_space_mall():
-    return render_template('one-space-mall.html')
+    return render_template('case-studies-one-space-mall.html')
 
 
 @frontend_bp.route('/case-studies/maarifa-polling', methods=['GET'])
