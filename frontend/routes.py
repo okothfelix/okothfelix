@@ -13,6 +13,11 @@ def download():
     return send_from_directory(os.getcwd(), "felix_cv.pdf", as_attachment=True, mimetype='application/pdf')
 
 
+@frontend_bp.route('/download-recommendation')
+def download_recommendation():
+    return send_from_directory(os.getcwd(), "recommendation.jpg", as_attachment=True, mimetype='application/jpg')
+
+
 @frontend_bp.route('/contacts', methods=['GET', 'POST'])
 def contacts():
     if request.method == 'POST':
@@ -29,6 +34,11 @@ def case_studies():
 @frontend_bp.route('/case-studies/maarifa-education', methods=['GET'])
 def case_studies_maarifa_education():
     return render_template('maarifa-education.html')
+
+
+@frontend_bp.route('/case-studies/timetable-generator', methods=['GET'])
+def case_studies_timetable_generator():
+    return render_template('timetable-generator.html')
 
 
 @frontend_bp.route('/case-studies/one-space-mall', methods=['GET'])

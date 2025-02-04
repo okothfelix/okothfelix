@@ -1,0 +1,149 @@
+{% extends "base-index.html" %}
+
+{%block title %}OneSpace Mall{% endblock %}
+
+{% block content %}
+
+<section class="hero-section ptb-100" style="background: url('')no-repeat center center / cover">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-7">
+                <div class="page-header-content text-center pt-sm-5 pt-md-5 pt-lg-0">
+                    <h1 class="mb-0">OneSpace Mall</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-details-section ptb-100">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-12 col-lg-8">
+                <div class="img-wrap mb-md-4 mb-lg-0">
+                    <img src="{{url_for('static', filename='img/ecommerce.jpg')}}" alt="project"
+                         class="img-fluid rounded shadow-sm"/>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="project-details-sidebar">
+                    <ul class="project-info-list">
+                        <li class="d-flex align-items-center mb-3 p-4 rounded">
+                            <span class="ti-user icon-sm color-secondary d-block mr-3"></span>
+                            <div class="d-block">
+                                <h5 class="mb-0">Company Name</h5>
+                                <p>Awili Technologies</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 p-4 rounded">
+                            <span class="ti-time icon-sm color-secondary d-block mr-3"></span>
+                            <div class="d-block">
+                                <h5 class="mb-0">Project Duration</h5>
+                                <p>4 months</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="project-details-content">
+                    <h4>Project Description</h4>
+                    <h5>Problem Statement</h5>
+                    <p>
+                        The client wanted to create a solution targeting stores that had an online audience but could
+                        not afford to build one as most of the target market were the vendors using social media to sell
+                        their products i.e. TikTok. One of the specifications of the platform was that it should be
+                        able to handle buy now pay later as this was not possible with social media venues.
+                    </p>
+                    <h5>Key Steps</h5>
+                    <p>
+                        The project had two main ares of development.<br>
+                        <strong>i) The user interface</strong><br>
+                        Through a web application it was possible for the users to shop easily, track orders and to
+                        check their next due payments for clients who had opted for lipa mdogo mdogo.
+                        <br>
+                        The merchants also had a portal access to where they would be able to process the orders
+                        received, follow up on the clients who had opted for pay later option, send out notification
+                        in form of SMS and newsletters and register affiliates to help them in the marketing of their
+                        products.
+                        <br>
+                        <strong>ii) The credit model</strong><br>
+                        Since the application accepted the buy now pay later option there was need to develop a credit
+                        model to protect the merchants against risk of customers not being able to complete payments
+                        made.
+                        <br>
+                        Through machine learning I was able to design a model that enables to generate a credit score of
+                        the customer based on the initial deposit made on the product and the previous purchases made.
+                        The model was also able to generate payment plans based on the customer choice i.e. weekly,
+                        monthly and the amount to be paid.
+                        <br>
+                    </p>
+                    <h5>Deliverables</h5>
+                    <p>
+                        The application development was successful. I was able to hand over the project to the client
+                        and was able to test the credit model through a partnership with mac kenya where they had
+                        incorporated some of their products on the platform. The credit model provided an accurate
+                        analysis and the platform is current incorporating electronic stores and african print products
+                        including fabrics, designer foot ware, bags and clothes to their catalogue.
+                    </p>
+                    <h5>Key Learning Points</h5>
+                    <P>
+                        Using machine learning I was able to analyse the customers purchasing trends and strategically
+                        place different products on the applications for different users to maximise on the users
+                        experience as they peruse the website. This enabled a boost sales and increase traffic to the
+                        applications.
+                    </P>
+                    <h5>Conclusion</h5>
+                    <p>
+                        Machine Learning and use of Artificial Intelligence is key in today's business success. Having
+                        used Machine Learning on this project to boost traffic I was amazed by the output before and after
+                        the implementation of the model. I have written a skeleton key model for similar projects that I
+                        may handle in future and continue iterating on it for maximum performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="project-details-feature">
+                    <h5>Tech Stack</h5>
+                    <ul class="list-unstyled tech-feature-list">
+                        <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
+                            API Development
+                        </li>
+                        <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
+                            Web application Programming with python and Flask Framework
+                        </li>
+                        <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
+                            Machine Learning
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="call-to-action py-5">
+    <div class="container">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-7">
+                <div class="subscribe-content">
+                    <h3 class="mb-1">Want to collaborate?</h3>
+                    <p>Facing a complex software problem? I can help. Contact me to explore solutions together.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="action-btn text-lg-right text-sm-left">
+                    <a href="{{url_for('frontend.contacts')}}" class="btn secondary-solid-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
